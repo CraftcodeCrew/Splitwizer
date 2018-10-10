@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Splitwizer</string>
+    <string name="description">Beschreibung</string>
+    <string name="penny">Penny</string>
+    <string name="dm">DM</string>
+    <string name="vesper">Vesper</string>
+    <string name="hello_fresh">Hello Fresh</string>
+    <string name="euro">€</string>
+    <string name="betrag">Betrag:</string>
+    <string name="payer">Gezahlt von:</string>
+    <string name="share">Geteilt mit:</string>
+    <string name="domi">Domi</string>
+    <string name="franzi">Franzi</string>
+    <string name="leon">Leon</string>
+</resources>
