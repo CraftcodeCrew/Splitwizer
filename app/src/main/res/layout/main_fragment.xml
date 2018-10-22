@@ -30,34 +30,40 @@
                 android:orientation="horizontal"
                 android:padding="16dp">
 
-                <RadioGroup
+                <LinearLayout
+                    android:id="@+id/pennydm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="16dp">
 
                     <RadioButton
+                        android:id="@+id/penny"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
+                        android:checked="true"
                         android:text="@string/penny"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                     <RadioButton
+                        android:id="@+id/dm"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:text="@string/dm"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-                </RadioGroup>
+                </LinearLayout>
 
-                <RadioGroup
+                <LinearLayout
+                    android:id="@+id/veschberhf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="16dp">
 
                     <RadioButton
+                        android:id="@+id/veschber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
@@ -65,32 +71,37 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                     <RadioButton
+                        android:id="@+id/hf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:text="@string/hello_fresh"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-                </RadioGroup>
+                </LinearLayout>
 
             </LinearLayout>
 
-            <RadioGroup
+            <LinearLayout
+                android:id="@+id/sonstiges"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:focusableInTouchMode="true"
                 android:padding="16dp">
 
                 <RadioButton
+                    android:id="@+id/sonstigesrb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <EditText
+                    android:id="@+id/sonstigeset"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-            </RadioGroup>
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -104,6 +115,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <EditText
+                    android:id="@+id/betrag"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -124,28 +136,37 @@
                 android:gravity="center"
                 android:padding="16dp">
 
-                <Button
+                <ToggleButton
+                    android:id="@+id/domi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minWidth="120dp"
                     android:minHeight="72dp"
                     android:text="@string/domi"
+                    android:textOn="@string/domi"
+                    android:textOff="@string/domi"
                     android:textSize="24sp" />
 
-                <Button
+                <ToggleButton
+                    android:id="@+id/franzi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minWidth="120dp"
                     android:minHeight="72dp"
                     android:text="@string/franzi"
+                    android:textOn="@string/franzi"
+                    android:textOff="@string/franzi"
                     android:textSize="24sp" />
 
-                <Button
+                <ToggleButton
+                    android:id="@+id/leon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minWidth="120dp"
                     android:minHeight="72dp"
                     android:text="@string/leon"
+                    android:textOn="@string/leon"
+                    android:textOff="@string/leon"
                     android:textSize="24sp" />
             </LinearLayout>
 
@@ -163,35 +184,42 @@
                 android:padding="16dp">
 
                 <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/domi1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/domi"
+                    android:checked="true"
                     android:padding="16dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/franzi1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/franzi"
+                    android:checked="true"
                     android:padding="16dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/leon1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/leon"
+                    android:checked="true"
                     android:padding="16dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
             </LinearLayout>
 
             <Button
+                android:id="@+id/aufgehts"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:minHeight="160dp"
                 android:padding="8dp"
-                android:text="Jaaa!! Auf geht's! Geil!!!"
+                android:text="@string/sen"
                 android:textSize="24sp" />
 
         </LinearLayout>

@@ -8,8 +8,9 @@
     <string name="euro">€</string>
     <string name="betrag">Betrag:</string>
     <string name="payer">Gezahlt von:</string>
-    <string name="share">Geteilt mit:</string>
+    <string name="share">Zu zahlen hat:</string>
     <string name="domi">Domi</string>
     <string name="franzi">Franzi</string>
     <string name="leon">Leon</string>
+    <string name="sen">Jaaa!! Auf geht\'s! Geil!!!</string>
 </resources>
